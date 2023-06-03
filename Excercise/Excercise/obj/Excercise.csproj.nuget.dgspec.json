@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mkoczyk\\Desktop\\Excercise\\cwiczenia6_mp-maciek1maciek\\Excercise\\Excercise\\Excercise.csproj": {}
+    "C:\\Users\\mkoczyk\\Desktop\\moje git\\APBD6\\Excercise\\Excercise\\Excercise.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mkoczyk\\Desktop\\Excercise\\cwiczenia6_mp-maciek1maciek\\Excercise\\Excercise\\Excercise.csproj": {
+    "C:\\Users\\mkoczyk\\Desktop\\moje git\\APBD6\\Excercise\\Excercise\\Excercise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mkoczyk\\Desktop\\Excercise\\cwiczenia6_mp-maciek1maciek\\Excercise\\Excercise\\Excercise.csproj",
+        "projectUniqueName": "C:\\Users\\mkoczyk\\Desktop\\moje git\\APBD6\\Excercise\\Excercise\\Excercise.csproj",
         "projectName": "Excercise",
-        "projectPath": "C:\\Users\\mkoczyk\\Desktop\\Excercise\\cwiczenia6_mp-maciek1maciek\\Excercise\\Excercise\\Excercise.csproj",
+        "projectPath": "C:\\Users\\mkoczyk\\Desktop\\moje git\\APBD6\\Excercise\\Excercise\\Excercise.csproj",
         "packagesPath": "C:\\Users\\mkoczyk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mkoczyk\\Desktop\\Excercise\\cwiczenia6_mp-maciek1maciek\\Excercise\\Excercise\\obj\\",
+        "outputPath": "C:\\Users\\mkoczyk\\Desktop\\moje git\\APBD6\\Excercise\\Excercise\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mkoczyk\\AppData\\Roaming\\NuGet\\NuGet.Config",

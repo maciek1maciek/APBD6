@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fdWttJ4TK4h5VY7GJo4iKZ1+bK896q0w5nReTi/MndRwvc2yTi1/cHkUZoXvDn3D9PVKt7joimUJN4EOiIkLLA==",
+  "dgSpecHash": "Euvy13EsZABnYx0gdQi2fDcli2RzLm8R44wIEwN6EEIBfkxzTwOphLZu/eMgXNpLr7MYAIwW+9bnifHdCG++GA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mkoczyk\\Desktop\\Excercise\\cwiczenia6_mp-maciek1maciek\\Excercise\\Excercise\\Excercise.csproj",
+  "projectFilePath": "C:\\Users\\mkoczyk\\Desktop\\moje git\\APBD6\\Excercise\\Excercise\\Excercise.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mkoczyk\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\mkoczyk\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

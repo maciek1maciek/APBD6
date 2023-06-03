@@ -67,3 +67,16 @@ namespace Excercise.Services
         }
     }
 }
+/*var trips = await _context.Trips
+           .Include(e => e.IdCountries) //to sa klucze obce 
+           .Include(e => e.IdClientTrips)
+           .ThenInclude(equals => IdClientNvigation)
+           .ToListAsync();
+
+return trips.Select(e => new TripWithAdditionalData)
+    {
+    Description = equals.Description, //ostatnie pole tripa
+    Countries = equals.IdCountries.Select(c => new CountryName { Name = c.Name }) //tutaj dodaje klase country 
+        //tutaj bym dodwal kolejne 
+});*/
+             
