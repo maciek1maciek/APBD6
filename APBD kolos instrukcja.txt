@@ -1,0 +1,52 @@
+1. usuwam te wearcast.cs z plikoów 
+2. to w propertisach costawiam tyko profiles i w druiej lini zmieniam na "Server", zmieniam port na 5000
+3. Instaluje w narzedzia->nuget->zarzadzaj:
+Microsoft entity framework
+Microsoft core sql.server
+Microsfot core tools
+System.Data.SqlClient
+4.odpalam sql server object eksplorer , tworze baze i sciagam connection string z propertisow i wrzucam go do appsettings.json
+
+przyklad gdzie wrzucic cos takiego ( tutaj sa dwie bazy): 
+
+ "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "CodeFirst": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=code;Integrated Security=True;",
+    "Scaffold": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=scaffold;Integrated Security=True;"
+  }
+}
+
+5. tworzymy sobie folder Models, i tworzymy klasy o takich samych nazwach co tabele 
+
+int, DateTime lub string 
+jezeli pola sa nulowane to DateTime? dodajmey znak zpatania do dataelemntu !!!
+
+6. Tworze folder data i robie klase np: TripsCOntext.cs 
+
+public class TripsContext : DbContext ona musi tak dziedziczyc, potem sciagam oba onstruktory do tej klasy 
+
+modelue cala baze  
+
+7. do glownego programu wstrzykuje kontekst pod add.swagger, gdzie CodeFist to nazwa bazy a appsetting
+
+builder.Services.AddDbContext<TripsContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CodeFirst")));
+
+8. migruja ją za pomoca komendy: Add-Migration Init -Context HospitalContext ----------------------------------------------------------------
+updatuje baze komenda Update-Database -Context HospitalContext
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+9.Dodanie Kontrollera danej klasy oraz DTos danej lasy
+w kontrolerze bede http get itp
+w DTOs
+bedzie odwozorwanie mdelu tylko z adnotacjami [reuired]
+
+10. tworze folder Services i tworze klase danej klasy i tam dodaje maetody z dodwaniem, usuwaniem itp
+11. w Services w danje klasie tworze interfejs z metodami i go implemntuje w tej klasie 
+12. wstrzyukje ten interfejs do Controllera danego 
+13. w proramie rowniez wsrzykuje ten interfejs pod query stringiem: builder.Services.AddScoped<IDoctorService, DoctorService>();
+
+
+
+ 
